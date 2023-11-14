@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction</title>
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color:rgb(238, 238, 238)
+    }
+    ul {
+      font-size: 23px;
+      text-align: center;
+      line-height: 1;
+      font-family: cursive;
+      background-color: rgb(191, 191, 191);
+      height: 70px;
+    }
+
+    ul li {
+      color: rgb(0, 0, 0);
+      padding-top: 10px;
+      display: inline-block;
+      align-content: space-between;
+      list-style-type: none;
+    }
+
+    ul li:hover {
+      color: rgb(255, 0, 0);
+      transition: ease-in-out 0.5s;
+    }
+
+    .fm {
+      margin-top: 100px;
+      font-size: 30px;
+      font-family: cursive;
+      font-weight: bolder;
+    }
+
+    #newsHeadline {
+      margin-top: 10px;
+      height: 250px;
+      width: 900px;
+      font-size: 19px;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-radius: 20px;
+      border-color: rgb(255, 12, 12);
+      border-style: dashed;
+    }
+    .button2 {
+      margin-top: 5rem;
+      font-size: 30px;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.888);
+      width: 150px;
+      height: 60px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border-radius: 20px;
+      border-color: red;
+      background-color: rgb(0, 37, 118);
+      margin-left: 25rem;
+    }
+
+    footer {
+      background-color: #19052e;
+      margin-top: 250px;
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+    }
+
+    footer .first h3 {
+      padding-left: 469px;
+      padding-top: 30px;
+      color: white;
+      font-size: 25px;
+    }
+
+    footer .footer-rights {
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      padding: 12px 0;
+      color: gray;
+    }
+    .fm .news {
+      color: rgb(0, 45, 85);
+      padding-left: 199px;
+    }
+    .para {
+      margin-top: 150px;
+      font-size: 20px;
+      width: 400px;
+      font-size: 25px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding-left: 100px;
+    }
+
+    .image2 {
+      float: right;
+      margin-right: 80px;
+      margin-top: 50px;
+    }
+
+    .image2:hover {
+      transform: skew(1deg);
+      animation-delay: 3s;
+    }
+    .predictnow{
+      text-align: center;
+      font-size: 25px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <h1> FAKE NEWS DETECTION MACHINE</h1>
+      </li>
+    </ul>
+  </nav>
+  <hr>
+  <img alt="image" class="image2" src="../static/image2.svg" width="450px" height="350px">
+  <br><p class="predictnow"><b>{{prediction_text}}</b></p>
+  <form class="fm" action="/prediction"  method="POST">
+    <label class="news">👇Enter the News Headlines👇</label>
+    <input type="text"  name="news"  id="newsHeadline" placeholder="Type here...">
+    <button class="button2">Submit</button>
+  </form>
+      
+  <footer>
+    <div class="footer">
+      <div class="first">
+        <h3>Fake News Detection Machine</h3>
+      </div>
+    </div>
+    <div class="footer-rights">
+      Copyright &#169 www.FakeNewsDetection.com | All Rights Reserved
+    </div>
+  </footer>
+</body>
+
+</html>

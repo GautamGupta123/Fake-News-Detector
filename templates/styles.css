@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+ul{
+    font-size: 23px;
+    text-align: center;
+    line-height: 1;
+    font-family:cursive;
+    background-color: rgb(191, 191, 191);
+    height: 70px;
+}
+ul li{
+    color:rgb(0, 0, 0);
+    padding-top: 10px;
+    display: inline-block;
+    align-content: space-between;
+    list-style-type: none;
+}
+ul li:hover{
+    color: rgb(255, 0, 0);
+    transition: ease-in-out 0.5s;
+}
+.fm{
+     margin-top: 100px;
+     font-size: 30px;
+     font-family: cursive;
+     font-weight: bolder;
+}
+#newsHeadline{
+    margin-top:10px;
+    height: 250px;
+    width:900px;
+    font-size: 19px;
+    margin-left:10px;
+    padding-left:10px;
+    border-radius:20px;
+    border-color: rgb(255, 12, 12);
+    border-style:dashed;
+}
+#button1{
+    margin-top:5rem;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.888);
+    width:150px;
+    height:60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    border-color: red;
+    background-color: rgb(0, 37, 118);
+    margin-left: 25rem;
+}
+.button2{
+    margin-top:5rem;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.888);
+    width:150px;
+    height:60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    border-color: red;
+    background-color: rgb(0, 37, 118);
+    margin-left: 25rem;
+}
+footer {
+    background-color: #19052e;
+    margin-top: 250px;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+}
+
+footer .first h3 {
+    padding-left: 469px;
+    padding-top:30px;
+    color:white;
+    font-size: 25px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 12px 0;
+    color: gray;
+}
+.fm .news{
+    color:rgb(0, 45, 85);
+    padding-left: 199px;
+}
+.image1{
+    float:right;
+    margin-right:190px;
+    margin-top:-190px ;
+}
+.image1:hover{
+    transform:skew(1deg);
+    animation-delay: 3s;
+}
+.para{
+    margin-top: 150px;
+    font-size: 20px;
+    width:400px;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left:100px;
+}
+.image2{
+    float:right;
+    margin-right:80px;
+    margin-top:50px;
+}
+.image2:hover{
+    transform:skew(1deg);
+    animation-delay: 3s;
+}
